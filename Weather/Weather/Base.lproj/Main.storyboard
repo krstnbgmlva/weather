@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0073.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gyC-UH-ENH">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <animations/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUy-vL-zM5">
+                                <rect key="frame" x="35" y="51" width="250" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1O1-bQ-Aj5"/>
+                                    <constraint firstAttribute="width" constant="250" id="me4-fA-PBX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a city" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faz-FM-GVa">
+                                <rect key="frame" x="87" y="103" width="146" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Dyb-55-Uq2"/>
+                                    <constraint firstAttribute="width" constant="146" id="cBR-Mg-aBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vse-1U-GuA">
+                                <rect key="frame" x="81" y="194" width="159" height="52"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="9G3-Pz-any"/>
+                                    <constraint firstAttribute="height" constant="52" id="fep-OO-t0b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
+                                <state key="normal" title="Get weather!">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="getWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zd2-lh-PI5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckO-Kn-cKb">
+                                <rect key="frame" x="40" y="292" width="241" height="145"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="ChK-QX-hN1"/>
+                                    <constraint firstAttribute="width" constant="225" id="dfg-62-S9i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ChK-QX-hN1"/>
+                                        <exclude reference="dfg-62-S9i"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. Berlin" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vji-Tq-mC2">
+                                <rect key="frame" x="66" y="143" width="189" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="WZ1-Nh-BVt"/>
+                                    <constraint firstAttribute="height" constant="30" id="wkg-AW-NXe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hUy-vL-zM5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="10U-DJ-fbv"/>
+                            <constraint firstItem="Vji-Tq-mC2" firstAttribute="top" secondItem="faz-FM-GVa" secondAttribute="bottom" constant="19" id="5Vc-jn-yKI"/>
+                            <constraint firstItem="faz-FM-GVa" firstAttribute="top" secondItem="hUy-vL-zM5" secondAttribute="bottom" constant="2" id="7zH-W7-jen"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gyC-UH-ENH" secondAttribute="bottom" id="Efd-d8-eGX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gyC-UH-ENH" secondAttribute="trailing" constant="-16" id="GU5-t3-cw4"/>
+                            <constraint firstItem="gyC-UH-ENH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Nyp-C6-K5P"/>
+                            <constraint firstItem="ckO-Kn-cKb" firstAttribute="top" secondItem="vse-1U-GuA" secondAttribute="bottom" constant="46" id="Rji-LW-J3j"/>
+                            <constraint firstItem="ckO-Kn-cKb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="Tx3-4g-1SA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ckO-Kn-cKb" secondAttribute="bottom" constant="131" id="UF4-C0-0od"/>
+                            <constraint firstItem="faz-FM-GVa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W4X-yY-JKD"/>
+                            <constraint firstItem="gyC-UH-ENH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="XZ3-xG-WZX"/>
+                            <constraint firstAttribute="trailing" secondItem="gyC-UH-ENH" secondAttribute="trailing" constant="4" id="dvf-FH-UTR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ckO-Kn-cKb" secondAttribute="trailing" constant="23" id="kV6-2O-8MC"/>
+                            <constraint firstItem="gyC-UH-ENH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="4" id="lsg-eH-5cK"/>
+                            <constraint firstItem="Vji-Tq-mC2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rYJ-iS-bvb"/>
+                            <constraint firstItem="hUy-vL-zM5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t8V-cM-mW3"/>
+                            <constraint firstItem="vse-1U-GuA" firstAttribute="top" secondItem="Vji-Tq-mC2" secondAttribute="bottom" constant="21" id="wCp-Ql-rha"/>
+                            <constraint firstItem="vse-1U-GuA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yTG-QB-kWG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dvf-FH-UTR"/>
+                                <exclude reference="lsg-eH-5cK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="city" destination="Vji-Tq-mC2" id="eo5-T2-9dz"/>
+                        <outlet property="cityWeather" destination="ckO-Kn-cKb" id="HrU-aq-Ji7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_0073.jpg" width="2448" height="2448"/>
+    </resources>
+</document>
